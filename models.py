@@ -1,24 +1,24 @@
 from django.db import models
-from django.contrib import admin
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import User
 import datetime
 
 class Base (models.Model):
     created_at = models.DateTimeField(default=datetime.date.today)
     updated_at = models.DateTimeField(default=datetime.date.today)
-    deleted_at = models.DateTimeField(default=datetime.date.today)
+    deleted_at = models.DateTimeField(null=True, blank=True)
     class Meta:
         abstract = True
 
 class Writer (Base):
-    pass
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    def __str__(self):
+        return user.name
 
 class Article (Base):
     writer_id = models.ForeignKey(Writer, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     subtitle = models.CharField(max_length=200)
     publish_date = models.DateTimeField(default=datetime.date.today)
-
     def __str__(self):
         return self.title
 
@@ -33,7 +33,6 @@ class MidiaVisual (Element):
     width = models.IntegerField(default = 0)
     height = models.IntegerField(default = 0)
     srs_link = models.IntegerField(max_length=200)
-    
     def __str__(self):
         return self.alt
 

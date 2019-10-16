@@ -29,6 +29,7 @@ class Element (Base):
 
 class MidiaVisual (Element):
     src = models.CharField(max_length=200)
+    img = models.ImageField(upload_to = 'image/', null=True)
     alt = models.CharField(max_length=200)
     width = models.IntegerField(default = 0)
     height = models.IntegerField(default = 0)

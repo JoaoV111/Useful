@@ -10,5 +10,5 @@ my codes files
 ### Django + Apache-Ubuntu
 `https://coderwall.com/p/ooerda/python-django-apache-ubuntu`
 
-### Django + Apache e mod_wsgi
+### Django + Apache & mod_wsgi
 `https://docs.djangoproject.com/pt-br/2.2/howto/deployment/wsgi/modwsgi/`

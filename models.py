@@ -30,7 +30,7 @@ class Article (Base):
 
     
 class Element (Base):
-    Article_id = models.ForeignKey(Article, on_delete=models.CASCADE)
+    article_id = models.ForeignKey(Article, on_delete=models.CASCADE)
     
     class Meta:
         abstract = True

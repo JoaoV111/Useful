@@ -12,3 +12,6 @@ my codes files
 
 ### Django + Apache & mod_wsgi
 `https://docs.djangoproject.com/pt-br/2.2/howto/deployment/wsgi/modwsgi/`
+
+### Custom Django Management Commands
+`https://simpleisbetterthancomplex.com/tutorial/2018/08/27/how-to-create-custom-django-management-commands.html`

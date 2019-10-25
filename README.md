@@ -15,3 +15,6 @@ my codes files
 
 ### Custom Django Management Commands
 `https://simpleisbetterthancomplex.com/tutorial/2018/08/27/how-to-create-custom-django-management-commands.html`
+
+### Ajax in Django
+`https://djangopy.org/learn/step-up-guide-to-implement-ajax-in-django/`
